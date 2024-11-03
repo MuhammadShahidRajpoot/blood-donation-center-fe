@@ -1,0 +1,17 @@
+.tableTabWarpper {
+  padding: 11px 19px;
+  background-color: #ffffff;
+  color: #005375;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  &.selected {
+    background-color: #387de5;
+    color: #ffffff;
+  }
+}

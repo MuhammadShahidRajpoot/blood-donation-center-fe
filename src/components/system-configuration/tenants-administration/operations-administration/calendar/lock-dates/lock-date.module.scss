@@ -1,0 +1,21 @@
+@import '../../../../../../styles/Global/Variable.scss';
+.lockDate {
+  :global {
+    .form-field {
+      width: 49% !important;
+      @media (max-width: 767px) {
+        width: 100% !important;
+      }
+    }
+    .textarea-new {
+      width: 100% !important;
+      @media (max-width: 767px) {
+        width: 100% !important;
+      }
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+}

@@ -1,0 +1,67 @@
+.personalizedGreetingContainer {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.greeting {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #555555;
+}
+.name {
+  font-family: 'Inter';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.73px;
+  color: #387de5;
+  margin: 0;
+}
+
+.organizationalLevelDropdown {
+  width: 244px;
+  height: 56px;
+  display: contents;
+  input {
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+    padding: 10px 20px;
+    height: 56px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter';
+    line-height: 24px;
+  }
+}
+
+.bloodTypeDistributionWrapper {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 25px;
+  margin: 10px 0 0 10px;
+
+  .flexColumnCenterAlign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .bloodTypeDistributionTitle {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    flex: 1;
+    margin: 0;
+  }
+}

@@ -1,0 +1,84 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.accountFilters {
+  .reactSelectDropdown {
+    .form-field {
+      width: 100% !important;
+      margin: unset !important;
+    }
+  }
+  .outlineBtn {
+    color: unset !important;
+    background-color: unset !important;
+    border-color: unset !important;
+  }
+  .nameInputField {
+    height: 56px;
+    border: 1px solid #e4e4e4;
+    outline: none !important;
+  }
+  .outlineBtn:hover {
+    background-color: rgba(104, 174, 255, 0.2) !important;
+  }
+  .react-select__menu-list {
+    max-height: 250px !important;
+    overflow-y: auto;
+  }
+  .more-options {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #005375 !important;
+  }
+  .selectFilters {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    // margin: unset;
+    border-top: 1px solid #dadada;
+  }
+  .clearFilterBtn {
+    font-size: 18px;
+    font-weight: 400;
+    color: #a3a3a3;
+    cursor: pointer;
+  }
+  .clearAllFiltersTxt {
+    font-size: 14px;
+    font-weight: 400;
+    color: #005375;
+    cursor: pointer;
+  }
+  .appliedFilterSpan {
+    color: #005375;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .appliedFilterContainer {
+    border-radius: 4px;
+    background: #eee;
+    padding: 5px 8px;
+  }
+}
+.drop > li > a:hover {
+  background-color: #1967d2 !important;
+  color: white !important;
+  // border: 1px solid #000 !important;
+}
+.bodyMainContent {
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.radioChecks {
+  input {
+    margin-top: 6px;
+    padding: 0 !important;
+  }
+  label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+  }
+}

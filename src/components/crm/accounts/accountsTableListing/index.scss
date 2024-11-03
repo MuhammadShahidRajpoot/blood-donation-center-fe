@@ -1,0 +1,31 @@
+.account-list-header,
+.sessions-list-header {
+  button::after {
+    display: none;
+  }
+  button {
+    min-height: unset;
+    height: unset !important;
+  }
+  ul {
+    width: 140px;
+  }
+  .checkboxInput {
+    padding: 12px 16px 12px 16px;
+  }
+  li {
+    border: none !important;
+    input {
+      width: 18% !important;
+    }
+    span,
+    label {
+      width: 82% !important;
+      white-space: break-spaces;
+      font-size: 14px;
+    }
+    &:hover {
+      background-color: rgb(104 174 255 / 20%);
+    }
+  }
+}

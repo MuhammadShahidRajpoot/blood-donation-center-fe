@@ -1,0 +1,17 @@
+.donor-buttons {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.text-container {
+  flex-grow: 1 !important;
+  position: absolute !important;
+  left: 30 !important;
+}
+
+.text-container p {
+  color: #555 !important;
+  font-size: 14px;
+  font-weight: 400;
+}

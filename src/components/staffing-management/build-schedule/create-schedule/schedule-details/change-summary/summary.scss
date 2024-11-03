@@ -1,0 +1,34 @@
+@import '../../../../../../styles//Global//Variable.scss';
+
+tbody tr {
+  border: 1px 1px 0px 1px solid #c6c6c6 !important;
+  td {
+    &.bgFadeBlue {
+      background-color: #e6ecf5;
+    }
+    &.headingText {
+      font-size: 16px;
+      font-family: $font-family-primary;
+    }
+    .statusChip {
+      width: 80px;
+      height: 24px;
+      padding-top: 4px;
+      /* Primary/Accent 4 */
+      background: #b1d9ff;
+      border-radius: 4px;
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+
+      div {
+        /* text */
+        font-family: $font-family-primary;
+        font-size: 12px;
+        text-align: center;
+        color: #0059ae;
+      }
+    }
+  }
+}

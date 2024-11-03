@@ -1,0 +1,30 @@
+.shift_details_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  & h2 {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+  }
+  & button {
+    background-color: transparent;
+    padding: 0;
+    color: #005375;
+    font-size: 14px;
+  }
+}
+
+.shift_details_modal_wrapper {
+  padding: 10px;
+}
+
+.shift_details_table_content {
+  & h2 {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    padding: 25px 0 20px 0;
+  }
+}

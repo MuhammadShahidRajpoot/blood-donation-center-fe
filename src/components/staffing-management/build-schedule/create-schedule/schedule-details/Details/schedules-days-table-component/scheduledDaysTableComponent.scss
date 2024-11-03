@@ -1,0 +1,28 @@
+.scheduleWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.scheduleDay {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #387de5;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  &.unavailable {
+    background-color: #edf4ff;
+    color: #2d2d2e;
+  }
+  &.unavailable-selected {
+    background-color: unset;
+  }
+}

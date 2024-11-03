@@ -1,0 +1,27 @@
+.nameDetailWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameContainer {
+  font-family: Inter;
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 8px 0px;
+}
+
+.reasonContainer2 {
+  font-family: Inter;
+  color: #005375;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100px;
+}

@@ -1,0 +1,54 @@
+@import '../../../../../../styles//Global/Variable.scss';
+
+.NotesBar {
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: none;
+  div {
+    p {
+      padding: 0px 11px;
+      color: #005375;
+      height: 100%;
+      vertical-align: middle;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .activeNotes {
+      background-color: #72a3d0;
+      padding: 0px 11px;
+      color: white;
+    }
+  }
+
+  .addNote {
+    display: inline-flex;
+    height: 40px;
+    padding: 12px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background-color: #387de5;
+    color: white;
+  }
+  .addNote:hover {
+    cursor: pointer;
+    background-color: #72a3d0;
+  }
+}
+
+.border-separator {
+  border-bottom: 1px solid $neutral5;
+}
+
+.tableViewInnerWidth {
+  max-width: 100% !important;
+}
+.cancel {
+  font-size: 14px !important;
+  color: #005375 !important;
+}

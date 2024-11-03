@@ -1,0 +1,88 @@
+@import '../../../styles/Global/Variable.scss';
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  padding: 0 30px;
+  background-color: $neutral9;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.03);
+  position: relative;
+  z-index: 1;
+  @media (max-width: 1199px) {
+    padding: 10px 20px;
+  }
+  @media (max-width: 767px) {
+    flex-flow: wrap;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+      padding-top: 10px;
+      width: 100%;
+    }
+    .formItem {
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      // margin-right: 20px;
+      position: relative;
+      input[type='text'] {
+        border: 1px solid $neutral6;
+        border-radius: 8px;
+        min-height: 56px;
+        padding: 10px 20px 10px 56px;
+        transition: all 0.5s ease;
+        background-image: url(../../../../public/images/Search.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: 8% 50%;
+        width: 356px;
+        font-size: 16px;
+        @media (max-width: 1199px) {
+          font-size: 15px;
+        }
+        @media (max-width: 767px) {
+          background-position: 5% 50%;
+          font-size: 14px;
+          min-height: 35px;
+          padding: 5px 15px 5px 40px;
+          background-size: 18px;
+          width: 100%;
+        }
+      }
+
+      input[type='text']:hover {
+        border-color: $primary;
+      }
+
+      input[type='text']:focus {
+        background-color: unset;
+        outline: none;
+        box-shadow: unset;
+        border-color: $primary;
+      }
+
+      input[type='text']:focus::placeholder {
+        color: $neutral10 !important;
+      }
+
+      input[type='text']:hover::placeholder {
+        color: $neutral;
+      }
+
+      input[type='text']::placeholder {
+        color: $neutral10;
+      }
+      .fieldIcon {
+        position: absolute;
+        top: 1rem;
+        right: 1.3rem;
+        color: #333;
+      }
+    }
+  }
+}

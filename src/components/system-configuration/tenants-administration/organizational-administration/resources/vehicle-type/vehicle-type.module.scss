@@ -1,0 +1,54 @@
+@import '../../../../../../styles/Global/Variable.scss';
+.vehicleType {
+  textarea {
+    border: 1px solid $neutral6;
+    border-radius: 8px;
+    min-height: 160px;
+    padding: 22px 20px 10px 20px;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    resize: none;
+    &:hover {
+      border-color: $primary;
+      &::placeholder {
+        font-size: 16px;
+        color: $neutral;
+      }
+    }
+    &:focus {
+      background-color: unset;
+      outline: none;
+      box-shadow: unset;
+      border-color: $primary;
+    }
+    &::placeholder {
+      font-size: 16px;
+      color: $neutral10;
+      transition: all 0.5s ease;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+}
+
+.customFormField {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+  @media (max-width: 767px) {
+    justify-content: left;
+    flex-flow: wrap;
+  }
+  :global {
+    .form-field {
+      width: unset !important;
+      @media (max-width: 767px) {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+      }
+    }
+  }
+}

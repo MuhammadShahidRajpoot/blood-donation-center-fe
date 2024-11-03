@@ -1,0 +1,200 @@
+@import '../../styles/Global/Variable.scss';
+
+.formcontainer {
+  margin-top: 3vh;
+  margin-bottom: 30vh;
+}
+
+.heading {
+  margin-bottom: 24px !important;
+  margin-top: -7px !important;
+}
+
+.dropdownWidthMenu {
+  width: 255px !important;
+}
+
+.createbtn {
+  margin-right: 30px !important;
+  padding: 0px 23px !important;
+}
+
+.footercancelbtn {
+  font-size: 15px !important;
+  margin-right: 0px !important;
+  padding-right: 20px !important;
+}
+
+.datepicker {
+  padding: 15px 33px 15px 20px !important;
+}
+
+.datePickerCloseIconStyles {
+  right: 40px !important;
+  &::after {
+    color: hsl(0, 0%, 80%);
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+.saveandclose {
+  padding: 12px 23px !important;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #387de5;
+  color: #387de5 !important;
+  margin-right: 20px !important;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.saveandclose:hover {
+  background-color: #edf4ff !important;
+}
+.buildScheduleDetails {
+  background-color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+.buildScheduleDetails .buildScheduleDetailsContent {
+  display: flex;
+  gap: 8px;
+}
+.buildScheduleDetails .buildScheduleDetailsContent .headerTitle {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+}
+.buildScheduleDetails .buildScheduleDetailsContent .headerSubTitle {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $tertiary;
+}
+
+.alertContainer {
+  position: fixed;
+  right: 5vh;
+
+  .alertBox {
+    display: flex;
+    width: 259px;
+    padding: 14px 8px 14px 16px;
+    align-items: center;
+    gap: 4px;
+    background-color: $warning;
+    border: 1px solid $warning;
+    border-radius: 8px;
+
+    .alertTitle {
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      color: $neutral7;
+      text-transform: capitalize;
+    }
+  }
+}
+
+/* Details Action Buttons  */
+.detailsActionBtnsContainer {
+  position: fixed;
+  right: 5vh;
+}
+.detailsActionBtnsContainer .detailsActionBtn {
+  border-radius: 6px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.detailsActionBtnsContainer .detailsActionBtn:hover {
+  background-color: $primary2;
+}
+
+.detailsActionBtnsContainer .detailsPrimaryActionBtn {
+  width: 93px;
+  height: 40px;
+  padding: 12px 23px;
+  background-color: $primary;
+}
+.detailsActionBtnsContainer .detailsActionStopBtn {
+  width: 82px;
+  height: 40px;
+  padding: 12px 23px;
+  background-color: $warning5;
+}
+.detailsActionBtnsContainer .detailsActionArrowBtns {
+  width: 66px;
+  height: 40px;
+  padding: 12px 23px;
+  background-color: $primary;
+  line-height: 12px !important;
+  &:disabled {
+    background-color: #a3a3a3;
+  }
+}
+.detailsActionBtnsContainer .detailsActionCounterView {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #212121;
+}
+
+.mainNavTabsContainerTest {
+  .filterBar .tabs {
+    border-bottom: 0px !important;
+  }
+}
+
+.nonScrollContainer {
+  // prevent scrolling
+  position: fixed;
+  top: 8vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.scrollContainer {
+  margin: 0 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+.table-header-subTitle {
+  font-family: Inter;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 15px;
+  color: $neutral;
+  margin-bottom: 0;
+}
+
+.buttonIcon {
+  position: absolute;
+  top: 18%;
+  right: 3%;
+}

@@ -1,0 +1,69 @@
+@import '../../../../../../styles/Global/Variable.scss';
+.bookingRule {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  @media (max-width: 767px) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .group {
+    p {
+      color: $neutral;
+    }
+    .headings {
+      display: flex inline;
+      align-items: center;
+      width: 100%;
+      p {
+        width: auto;
+        margin-bottom: 0;
+        margin-right: 10px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+  .checkboxGroup {
+    & > div {
+      float: left;
+    }
+  }
+  .headings {
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+    p {
+      width: auto !important;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+  .inlineCheckboxes {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    > div {
+      width: 40%;
+      label {
+        top: unset !important;
+      }
+    }
+    p {
+      width: 100%;
+    }
+  }
+  .radioBtnGap {
+    width: 100%;
+    display: flex;
+    > div {
+      width: 39.8% !important;
+    }
+  }
+  .onlineFields {
+    > div {
+      margin-bottom: 20px;
+    }
+  }
+}

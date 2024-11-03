@@ -1,0 +1,151 @@
+@import '../../../../styles//Global/Variable.scss';
+
+body {
+  color: #2d2d2e !important;
+}
+
+.NotesBar {
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+  div {
+    p {
+      padding: 0px 11px;
+      color: #005375;
+      height: 100%;
+      vertical-align: middle;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .activeNotes {
+      background-color: #72a3d0;
+      padding: 0px 11px;
+      color: white;
+    }
+  }
+
+  .addNote {
+    display: inline-flex;
+    height: 40px;
+    padding: 12px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background-color: #387de5;
+    color: white;
+  }
+  .addNote:hover {
+    cursor: pointer;
+    background-color: #72a3d0;
+  }
+}
+
+.tableViewInnerWidth {
+  max-width: 100% !important;
+}
+.cancel {
+  font-size: 14px !important;
+  color: #005375 !important;
+}
+
+.editor-view {
+  background: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px 0px 10px 10px;
+  padding: 13px 30px;
+}
+.rdw-editor-toolbar {
+  padding: 7px 7px 0;
+}
+.rdw-dropdown-wrapper {
+  height: 30px;
+  background: white;
+  cursor: pointer;
+  border: none; /* Remove the border */
+  border-radius: 2px;
+  margin: 0 3px;
+  text-transform: capitalize;
+  background: transparent;
+  padding: 10px 10px;
+}
+
+.rdw-option-wrapper {
+  border: none;
+  background: transparent;
+  padding: 10px 10px;
+}
+
+.rdw-editor-toolbar {
+  border: none;
+  background-color: #f5f5f5;
+}
+.public-DraftEditor-content[contenteditable='true'] {
+  padding: 0px 10px;
+}
+.rdw-dropdown-selectedtext span {
+  padding: 0px 9px 0 0;
+}
+.rdw-dropdown-selectedtext img {
+  padding: 0px 9px 0 0;
+}
+// .rdw-link-modal-target-option{
+//   margin: 30px 0px;
+// }
+// .rdw-link-modal-buttonsection{
+//   margin: 60px auto;
+// }
+.rdw-link-modal {
+  width: max-content;
+  height: fit-content;
+}
+.rdw-link-modal-label {
+  position: static;
+  margin: 0 0 -12px 0;
+}
+.rdw-link-modal-target-option {
+  position: static;
+  margin: 0;
+}
+.rdw-link-modal-input {
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+.rdw-link-modal-btn {
+  background-color: #387de5 !important;
+  border-radius: 6px !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 6px 20px !important;
+  text-align: center !important;
+}
+.rdw-link-modal-btn:disabled {
+  color: #ffff !important;
+}
+
+.rdw-link-modal-btn:hover {
+  background-color: #72a3d0 !important;
+  box-shadow: none !important;
+}
+.rdw-dropdown-selectedtext {
+  width: inherit;
+}
+.rdw-dropdown-optionwrapper {
+  margin-top: 14px;
+}
+
+.rdw-link-modal-target-option {
+  display: none !important;
+}
+.loading-data {
+  font-size: 16px;
+  color: #000000;
+}
+.form__scroll {
+  max-height: calc(100vh - 204px);
+  overflow: auto;
+}

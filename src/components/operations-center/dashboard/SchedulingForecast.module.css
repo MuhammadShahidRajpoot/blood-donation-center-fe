@@ -1,0 +1,51 @@
+.schedulingForecastContainer {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+  margin: 20px 0;
+  height: 32rem;
+  position: absolute;
+  width: calc(100% - 50px);
+  .titleAndFilters {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+    .title {
+      flex: 1;
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+    }
+  }
+  .totalsContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+    .flexRowGap10 {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+}
+.normalFont {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.blueFont {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #387de5;
+}

@@ -1,0 +1,10 @@
+@import '../../../styles/Global/Variable.scss';
+.linkPreview {
+  color: $primary;
+  font-size: large;
+  font-weight: 400;
+  @media (max-width: 767px) {
+    margin-top: 10px;
+    display: block;
+  }
+}

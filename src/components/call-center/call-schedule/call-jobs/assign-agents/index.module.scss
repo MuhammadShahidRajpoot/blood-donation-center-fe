@@ -1,0 +1,57 @@
+@import '../../../../../styles/Global/Variable.scss';
+
+.customTablesBorderss {
+  table {
+    border: 1px solid #bababa !important;
+  }
+}
+
+.btnCancel {
+  font-size: 14px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  color: #005375;
+
+  &:hover {
+    color: #387de5;
+    cursor: pointer;
+  }
+}
+
+.btnSuccess {
+  display: inline-flex;
+  height: 40px;
+  padding: 12px 23px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background-color: #387de5;
+  margin-bottom: 0px;
+  color: white !important;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #72a3d0;
+  }
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h6 span {
+  font-weight: bold;
+  padding-right: 2em;
+}
+
+.modalMain {
+  width: 1200px;
+}

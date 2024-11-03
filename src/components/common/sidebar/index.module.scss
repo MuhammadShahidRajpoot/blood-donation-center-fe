@@ -1,0 +1,267 @@
+@import '../../../styles/Global/Variable.scss';
+
+.mobileIcon {
+  position: absolute;
+  position: fixed;
+  z-index: 99;
+  top: 21px;
+  left: 15px;
+  display: none;
+  transform: rotate(180deg);
+  @media (max-width: 1199px) {
+    display: block;
+  }
+}
+
+.sidebarMain {
+  min-width: 18.5%;
+  box-shadow: -15px 4px 20px 0px $neutral;
+  height: 92vh;
+  position: sticky;
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+  z-index: 10;
+
+  @media (max-width: 1199px) {
+    position: fixed;
+    top: 64px;
+    background: #fff;
+    box-shadow: -15px 10px 20px 0px #2d2d2e;
+    z-index: 21;
+    left: -100%;
+    transition: all 0.3s;
+  }
+
+  &.active {
+    transition: all 0.3s;
+    @media (max-width: 1199px) {
+      left: 0;
+      transition: all 0.3s;
+    }
+  }
+
+  .sidebarTop {
+    height: 96.5%;
+    @media (max-width: 767px) and (orientation: portrait) {
+      height: 93%;
+    }
+    @media (max-width: 767px) and (orientation: landscape) {
+      height: 82%;
+    }
+
+    .sidebarHeader {
+      display: flex;
+      align-items: center;
+      height: 9%;
+      padding: 0 20px;
+      border-bottom: 1px solid #d9d9d9;
+      min-height: 70px;
+
+      @media (max-width: 1199px) {
+        height: 50px;
+      }
+
+      .icon {
+        margin-right: 15px;
+        cursor: pointer;
+
+        @media (max-width: 1199px) {
+          display: none;
+        }
+      }
+
+      h3 {
+        font-size: 20px;
+        color: $neutral;
+        margin: 0;
+        font-weight: 700;
+      }
+    }
+
+    .sidebarBody {
+      height: 91%;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .menuItem {
+          a {
+            padding-left: 15px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #d9d9d9;
+            font-size: 16px;
+            color: $secondary;
+            font-weight: 400;
+            background-color: $neutral9;
+            transition: none;
+            padding-right: 35px;
+
+            &:before {
+              // content: '-';
+              display: block;
+              margin-right: 10px;
+            }
+
+            &:hover {
+              background-color: $primary6;
+              font-weight: 700;
+            }
+            &.active {
+              background-color: $primary6;
+              font-weight: 700;
+            }
+          }
+          &.open {
+            a {
+              &:after {
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+
+        .active {
+          > a {
+            background-color: $primary6;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .hasChildMain {
+        > a {
+          position: relative;
+
+          &:after {
+            content: '';
+            display: block;
+            background-image: url('../../../../public/images/chevron-bottom.svg');
+            height: 24px;
+            width: 24px;
+            position: absolute;
+            right: 20px;
+            object-fit: contain;
+            transition: all 0.5s ease;
+          }
+        }
+
+        .hasChild {
+          transition: all 0.5s ease;
+          visibility: collapse;
+          opacity: 0;
+          height: 0;
+
+          &.open {
+            visibility: visible;
+            opacity: 1;
+            height: auto;
+          }
+
+          &.close {
+            display: block;
+          }
+
+          li {
+            a {
+              padding-left: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sidebarFooter {
+    height: 3.5%;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+      height: 30px;
+      z-index: 100;
+      position: relative;
+    }
+
+    span {
+      color: $neutral9;
+      font-size: 12px;
+      padding: 0 20px;
+    }
+  }
+
+  &.closed {
+    min-width: 5%;
+
+    @media (max-width: 1199px) {
+      left: -100%;
+      transition: all 0.3s;
+    }
+
+    .sidebarBody {
+      ul {
+        .menuItem {
+          a {
+            padding-left: 20px;
+            padding-right: 0px;
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .sidebarHeader {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .sidebarIcon {
+        margin: 0;
+      }
+    }
+  }
+}
+.activate {
+  background-color: $primary6 !important;
+  font-weight: 700 !important;
+}
+
+.active {
+  > a {
+    background-color: $primary6;
+    font-weight: 700;
+  }
+}
+.openSideBar {
+  width: 100%;
+}
+
+.sidebarIconPadding {
+  padding: 10px 34px !important;
+}
+// .sidebarMain.closed {
+//   min-width: 5%;
+
+//   .sidebarBody ul .menuItem a {
+//     padding-left: 20px;
+//   }
+// }
+
+// @media only screen and (min-width: 1150px) {
+//   .sidebarMain.closed {
+//     .sidebarBody ul .menuItem a {
+//       padding-left: 20px;
+//     }
+//   }
+// }

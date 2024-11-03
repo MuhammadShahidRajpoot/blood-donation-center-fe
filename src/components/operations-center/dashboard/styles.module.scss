@@ -1,0 +1,134 @@
+.dashboardPage {
+  padding: 20px 25px;
+}
+.personalizedGreetingContainer {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+.greeting {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #555555;
+}
+.name {
+  font-family: 'Inter';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.73px;
+  color: #387de5;
+  margin: 0;
+}
+
+.organizationalLevelDropdown {
+  width: 244px;
+  height: 56px;
+  display: contents;
+  input {
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+    padding: 10px 20px;
+    height: 56px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter';
+    line-height: 24px;
+  }
+}
+
+.kpiContainer {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+  margin-bottom: 20px;
+  .titleAndFilters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    .title {
+      font-family: 'Inter';
+      font-size: 24px;
+      font-weight: 500;
+      color: #2d2d2e;
+    }
+    form {
+      .filterBox {
+        div,
+        input {
+          cursor: pointer;
+        }
+        padding: 0;
+        span {
+          top: 0.8rem;
+        }
+        &:first-child {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  .gradientCardsFlexbox,
+  .grayCardsFlexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 20px;
+
+    .drivesSessionsColumn {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 auto;
+
+      .drivesSessionsCard {
+        color: #ffffff;
+        padding: 20px 20px 60px 20px;
+        border-radius: 10px;
+        width: 300px;
+        background: linear-gradient(135deg, #307997 0%, #064964 100%);
+        position: relative;
+        overflow: hidden;
+        flex: 1;
+
+        .background {
+          position: absolute;
+          top: 3.8rem;
+          left: 8.9rem;
+          width: 100%;
+          height: 100%;
+          opacity: 0.3;
+        }
+
+        h1,
+        h6 {
+          margin: 0;
+        }
+
+        .text {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 20px;
+      width: 25%;
+    }
+  }
+}

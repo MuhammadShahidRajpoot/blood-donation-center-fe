@@ -1,0 +1,62 @@
+span.badge {
+  min-width: 80px;
+  min-height: 24px;
+  display: inline-flex;
+  margin: 0 3px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 12px;
+
+  &.green {
+    background-color: #def0d7;
+    color: #5ca044;
+  }
+
+  &.yellow {
+    background-color: #fff8ea;
+    color: #ffaf14;
+  }
+
+  &.red {
+    background-color: #fff2f2;
+    color: #ff1e1e;
+  }
+
+  &.blue {
+    background-color: #b1d9ff;
+    color: #0059ae;
+  }
+
+  &.lavender {
+    background-color: #e6e6fa;
+    color: #5c5cbf;
+  }
+
+  &.grey {
+    background-color: #aabdd0;
+    color: #4c555e;
+  }
+}
+.toolTip {
+  z-index: 2 !important;
+}
+.overRide td:not(:first-child) {
+  background-color: #fff2f2 !important;
+}
+.disabledBtn {
+  cursor: default !important;
+  border: none !important;
+  background: #e4e4e4 !important;
+  color: #a3a3a3 !important;
+  pointer-events: none !important;
+}
+
+.acceptBtn {
+  padding: 0px !important;
+  /* width: 29px; */
+  height: 29px !important;
+  width: fit-content !important;
+  background: transparent !important;
+  margin-right: 8px !important;
+}

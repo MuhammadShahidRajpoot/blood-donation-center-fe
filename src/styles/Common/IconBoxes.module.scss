@@ -1,0 +1,61 @@
+@import '../Global/Variable.scss';
+
+.iconBox {
+  width: 100%;
+  border-radius: 10px;
+  background-color: $neutral9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 5px $neutral5;
+  top: 0;
+  position: relative;
+
+  &:hover {
+    a {
+      .icon {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  a {
+    min-height: 235px;
+    min-width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (max-width: 767px) {
+      min-width: auto;
+      min-height: 130px;
+    }
+
+    .icon {
+      margin-bottom: 10px;
+      transform: scale(1);
+      transition: all 0.5s ease;
+
+      @media (max-width: 767px) {
+        svg {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    .text {
+      font-size: 24px;
+      font-weight: 500;
+      color: $primary;
+      max-width: 200px;
+      margin: 0 auto;
+      text-align: center;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.time-picker-container {
+  position: relative;
+}
+
+.time-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition:
+    top 0.3s,
+    font-size 0.3s;
+}
+
+.placeholder-active {
+  top: 5px;
+  font-size: 12px;
+}
+
+.clock-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* You can adjust styling for the clock icon as per your design */

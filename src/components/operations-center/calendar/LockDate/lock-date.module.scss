@@ -1,0 +1,54 @@
+@import '../../../../styles/Global/Variable.scss';
+.lockDate {
+  textarea {
+    border: 1px solid $neutral6;
+    border-radius: 8px;
+    min-height: 160px;
+    padding: 22px 20px 10px 20px;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    resize: none;
+    &:hover {
+      border-color: $primary;
+      &::placeholder {
+        font-size: 16px;
+        color: $neutral;
+      }
+    }
+    &:focus {
+      background-color: unset;
+      outline: none;
+      box-shadow: unset;
+      border-color: $primary;
+    }
+    &::placeholder {
+      font-size: 16px;
+      color: $neutral10;
+      transition: all 0.5s ease;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+}
+.nobtn {
+  width: 132px !important;
+  // height: 56px !important;
+  padding: 16px 32px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 18px !important;
+  font-weight: 400px !important;
+  line-height: 24px !important;
+}
+.nobtnhover:hover {
+  background-color: #edf4ff !important;
+}
+.submitbutton {
+  min-height: 40px;
+  // width: 40% !important;
+}
+form input.custom_value {
+  padding-top: 15px !important;
+}

@@ -1,0 +1,51 @@
+@import '../../../../styles///Global//Variable.scss';
+.text-center {
+  text-align: center;
+}
+.table-header-subTitle {
+  font-family: Inter;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 15px;
+  color: $neutral;
+  margin-bottom: 0;
+}
+.name-ellipse {
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: $tertiary;
+}
+.title-name-link {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $tertiary;
+}
+.alert-container {
+  padding: 20px 30px 5px 30px;
+}
+.alert-container .alert-component {
+  padding: 14px 8px 14px 16px;
+  border-radius: 0;
+  display: flex;
+}
+.alert-container .alert-component .alert-title {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: $neutral7;
+  text-transform: capitalize;
+}
+
+.warn {
+  background-color: $warning5 !important;
+  border: 1px solid $warning5 !important;
+}
+
+.success {
+  background-color: $warning !important;
+  border: 1px solid $warning !important;
+}

@@ -1,0 +1,215 @@
+.selectModType,
+.editContainer {
+  margin: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.editContainer {
+  margin-bottom: 90px;
+}
+
+.rtdTable {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.staffName {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Inter';
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.staffNameValue {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Inter';
+  line-height: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.rtdTable tr {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 12px;
+  &:last-child {
+    margin-right: 0;
+  }
+  th:first-child {
+    width: 107px;
+  }
+
+  th:nth-child(2) {
+    width: 78px;
+  }
+
+  th:nth-child(3) {
+    width: 86px;
+  }
+
+  th:nth-child(4) {
+    width: 84px;
+  }
+
+  th:nth-child(5) {
+    width: 114px;
+  }
+
+  th:nth-child(6) {
+    width: 101px;
+  }
+
+  th:nth-child(7) {
+    width: 100px;
+  }
+
+  th:nth-child(8) {
+    width: 158px;
+  }
+
+  th:nth-child(9) {
+    width: 158px;
+  }
+
+  th:nth-child(10) {
+    width: 114px;
+  }
+
+  th:nth-child(11) {
+    width: 111px;
+  }
+  th:nth-child(12) {
+    width: 110px;
+  }
+}
+
+.rtdTable th,
+.byRoleTable th {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  text-align: left;
+  height: 60px;
+  padding: 10px 15px;
+  color: #2d2d2e;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.rtdTable th span,
+.byRoleTable th span {
+  display: grid;
+  width: 100%;
+  &[contenteditable='true'] {
+    &:focus {
+      outline: none;
+    }
+  }
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.editableCol {
+  background-color: #ffffff !important;
+  border: 1px solid #e4e4e4;
+}
+
+.rtdTable th input,
+.byRoleTable th input {
+  border: 0;
+  padding: 0;
+}
+
+.rtdTable p,
+.byRoleTable p {
+  color: #555555;
+  font-size: 12px;
+  font-family: 'Inter';
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+}
+
+.radioButtonLabel {
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.dataLoading {
+  margin: 10px;
+}
+
+.editByRole {
+  margin: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.editByRoleTitle {
+  margin-bottom: 10px;
+}
+
+.byRoleTable {
+  border-collapse: separate;
+  -webkit-border-horizontal-spacing: 10px;
+  -webkit-border-vertical-spacing: 20px;
+}
+
+.byRoleTable tr {
+  display: table-row;
+}
+
+.byRoleTable th {
+  width: 25%;
+}
+
+.timePicker {
+  display: flex;
+  justify-content: space-between;
+  input {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+  }
+  button {
+    padding: 0;
+    top: -8px;
+    color: #1c1b1f;
+  }
+}
+
+.selectModType svg {
+  width: 16px;
+  height: 16px;
+  path {
+    fill: #a3a3a3;
+  }
+}
+
+.selectModType h5 div,
+.editContainer h5 div {
+  display: inline;
+  margin-left: 10px;
+  :nth-child(2) {
+    position: static;
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  ::before {
+    left: 16px !important;
+    margin-left: 15px;
+  }
+}

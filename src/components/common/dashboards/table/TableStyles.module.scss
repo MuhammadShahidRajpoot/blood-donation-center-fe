@@ -1,0 +1,49 @@
+.tbRow {
+  border-bottom: 2px solid #d9d9d9;
+  border-left: unset;
+  border-right: unset;
+  border-top: unset;
+}
+
+.tableCell {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Inter;
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 18px 10px;
+  &:first-child {
+    padding-left: 30px;
+  }
+  &:last-child {
+    padding-right: 30px;
+  }
+}
+
+.th {
+  font-family: Inter;
+  color: #000000;
+  background-color: unset;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 20px 10px;
+  &:first-child {
+    padding-left: 30px;
+  }
+  &:last-child {
+    padding-right: 30px;
+  }
+}
+
+.th-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}

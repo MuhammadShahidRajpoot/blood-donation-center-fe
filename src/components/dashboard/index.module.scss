@@ -1,0 +1,64 @@
+.dashboardMain {
+  background-image: url('../../assets/images/login-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 160px;
+  margin-top: 8vh;
+  @media (max-width: 767px) {
+    margin-top: 0px;
+    min-height: 100vh;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .dashboardBoxesMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    @media (max-width: 767px) {
+      padding-top: 63px;
+      padding-bottom: 63px;
+    }
+    .dashboardBoxes {
+      margin-right: 65px;
+      margin-bottom: 65px;
+      &:nth-child(4n),
+      &:last-child {
+        margin-right: 0;
+      }
+      @media (max-width: 767px) {
+        &:nth-child(4n),
+        &:last-child {
+          margin-right: 10px;
+        }
+        margin: 10px 10px;
+        width: 40%;
+      }
+    }
+  }
+  .footerLogo {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+
+    @media (max-width: 767px) {
+      right: 20px;
+      bottom: 10px;
+      svg {
+        width: 80px;
+      }
+    }
+  }
+}
+.productNotes {
+  padding: 50px;
+  border: 1px solid;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+}

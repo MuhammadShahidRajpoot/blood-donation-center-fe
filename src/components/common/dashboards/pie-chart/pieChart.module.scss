@@ -1,0 +1,35 @@
+.pieChartContainer {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+  flex: 1;
+  .flexColumnCenterAlign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .containerTitle {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      flex: 1;
+    }
+    .chartGroups {
+      flex: 1;
+      margin-right: 5rem;
+      ul {
+        list-style-type: none;
+        font-size: 16px;
+        li {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+
+  text {
+    font-size: 16px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+  }
+}

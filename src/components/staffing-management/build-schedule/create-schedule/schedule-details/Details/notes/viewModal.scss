@@ -1,0 +1,22 @@
+.viewModalBody {
+  border-radius: 8px;
+  height: 30vh;
+  margin: 0px 32px;
+  border: 1px solid #d9d9d9;
+  color: #a3a3a3;
+  word-break: break-word;
+  overflow: auto;
+  p {
+    color: #a3a3a3;
+  }
+}
+
+.viewModalHeader {
+  border: unset;
+  margin: 16px;
+}
+
+.viewModalFooter {
+  border: unset;
+  margin: 16px;
+}

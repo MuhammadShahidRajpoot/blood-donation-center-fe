@@ -1,0 +1,216 @@
+.tooltipContainer {
+  position: relative;
+  @media (max-width: 767px) {
+    position: unset;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+
+  .tooltipText {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    width: max-content;
+    max-width: 320px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #72a3d0;
+    @media (max-width: 767px) {
+      bottom: 5%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transform: unset;
+    }
+
+    &.showTooltip {
+      transform: translateY(50px) translateX(25px);
+
+      &:before {
+        bottom: 22px;
+        left: -3%;
+        transform: translateX(-37%) rotate(-90deg);
+      }
+    }
+
+    &.tooltipTextDown {
+      top: 140%;
+      bottom: auto;
+
+      &:before {
+        top: -16px;
+        bottom: auto;
+        transform: translateX(-50%) rotate(0deg);
+        border-color: transparent transparent #72a3d0 transparent;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-180deg);
+      border-width: 8px;
+      border-style: solid;
+      border-color: transparent transparent #72a3d0 transparent;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.staffSetupTooltipContainer {
+  position: relative;
+
+  .icon {
+    cursor: pointer;
+  }
+
+  .staffSetupTooltipText {
+    position: absolute;
+    bottom: 350%;
+    left: -500%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    width: max-content;
+    max-width: 320px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #72a3d0;
+    word-break: break-word;
+    display: block;
+    white-space: normal;
+
+    &.showTooltip {
+      transform: translateY(50px) translateX(25px);
+
+      &:before {
+        bottom: -15px;
+        left: 62px;
+        transform: translateX(-37%) rotate(-180deg);
+      }
+    }
+
+    &.tooltipTextDown {
+      top: 140%;
+      bottom: auto;
+
+      &:before {
+        top: -16px;
+        bottom: auto;
+        transform: translateX(-50%) rotate(0deg);
+        border-color: transparent transparent #72a3d0 transparent;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-180deg);
+      border-width: 8px;
+      border-style: solid;
+      border-color: transparent transparent #72a3d0 transparent;
+    }
+  }
+}
+
+.zindex1 {
+  z-index: 1000;
+}
+
+.toolipDescription {
+  text-align: center !important;
+
+  p {
+    font-size: 14px !important;
+    color: #fff !important;
+    line-height: 10px !important;
+    text-transform: none !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+.operationListTooltipContainer {
+  position: relative;
+
+  .icon {
+    cursor: pointer;
+  }
+
+  .operationListTooltipText {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    width: max-content;
+    max-width: 320px;
+    border-radius: 8px;
+    background: #72a3d0;
+
+    &.showTooltip {
+      transform: translateY(36px) translateX(-40px);
+
+      &:before {
+        top: 35%;
+        left: 0;
+        transform: translateX(-100%) rotate(180deg);
+        border-color: transparent transparent transparent #72a3d0;
+      }
+    }
+
+    &.tooltipTextDown {
+      top: 140%;
+      bottom: auto;
+
+      &:before {
+        top: -16px;
+        bottom: auto;
+        transform: translateX(-50%) rotate(0deg);
+        border-color: transparent transparent #72a3d0 transparent;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 25px;
+      left: 7%;
+      border-width: 8px;
+      border-style: solid;
+    }
+  }
+}
+
+.nceTooltip {
+  display: block;
+  word-wrap: break-word;
+  width: 350px;
+  white-space: normal;
+}

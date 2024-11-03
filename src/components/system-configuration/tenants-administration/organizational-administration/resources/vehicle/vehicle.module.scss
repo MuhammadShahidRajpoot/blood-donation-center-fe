@@ -1,0 +1,113 @@
+@import '../../../../../../styles/Global/Variable.scss';
+.vehicle {
+  textarea {
+    border: 1px solid $neutral6;
+    border-radius: 8px;
+    min-height: 160px;
+    padding: 22px 20px 10px 20px;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    resize: none;
+    &:hover {
+      border-color: $primary;
+      &::placeholder {
+        font-size: 16px;
+        color: $neutral;
+      }
+    }
+    &:focus {
+      background-color: unset;
+      outline: none;
+      box-shadow: unset;
+      border-color: $primary;
+    }
+    &::placeholder {
+      font-size: 16px;
+      color: $neutral10;
+      transition: all 0.5s ease;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+}
+
+.drop > li > a:hover {
+  background-color: #1967d2 !important;
+  color: white !important;
+  // border: 1px solid #000 !important;
+}
+
+.selectBorder {
+  background-image: none !important;
+  &:hover {
+    border-color: #e4e4e4 !important;
+  }
+}
+
+.filterBarInner {
+  :global {
+    .tabs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .anchorButton {
+        @media (max-width: 767px) {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 5px;
+          z-index: 1;
+          a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+            border-radius: 8px;
+            width: 100%;
+            min-height: 40px;
+            padding: 10px 32px 10px 32px;
+            font-size: 14px;
+            background-color: #387de5;
+            border-color: #387de5;
+            color: #ffffff;
+            span {
+              color: #fff;
+            }
+          }
+        }
+        span {
+          font-size: 14px;
+          color: #387de5;
+        }
+      }
+    }
+  }
+}
+
+.filterBar {
+  :global {
+    .tabs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .editButton {
+        margin-bottom: 0;
+        @media (max-width: 767px) {
+          position: absolute;
+          top: -60px;
+          right: 10px;
+          z-index: 1;
+        }
+        span {
+          font-size: 14px;
+          @media (max-width: 767px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

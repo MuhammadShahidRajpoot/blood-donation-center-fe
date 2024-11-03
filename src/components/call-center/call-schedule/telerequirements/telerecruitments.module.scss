@@ -1,0 +1,61 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.buttonDecline {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+  border-radius: 3px;
+
+  &:disabled {
+    background-color: transparent;
+    border: 1px solid rgb(228, 228, 228);
+    color: rgb(152, 151, 151);
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+}
+
+.buttonAccept {
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 3px;
+  opacity: 0.7;
+
+  &:disabled {
+    background-color: transparent;
+    border: 1px solid rgb(228, 228, 228);
+    color: rgb(152, 151, 151);
+    &:hover {
+      opacity: 0.7 !important;
+    }
+  }
+
+  &:hover {
+    opacity: 0.2;
+  }
+}
+
+.buttonCreate {
+  background-color: blue;
+  border: 1px solid blue;
+  border-radius: 3px;
+
+  &:disabled {
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(228, 228, 228);
+    color: rgb(152, 151, 151);
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+}

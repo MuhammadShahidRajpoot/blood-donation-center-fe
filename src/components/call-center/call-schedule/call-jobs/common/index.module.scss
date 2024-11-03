@@ -1,0 +1,80 @@
+@import '../../../../../styles/Global/Variable.scss';
+
+.customTablesBorderss {
+  table {
+    border: 1px solid #bababa !important;
+  }
+}
+
+.btnCancel {
+  font-size: 14px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  color: #005375;
+
+  &:hover {
+    color: #387de5;
+    cursor: pointer;
+  }
+}
+
+.btnSuccess {
+  display: inline-flex;
+  height: 40px;
+  padding: 12px 23px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background-color: #387de5;
+  margin-bottom: 0px;
+  color: white !important;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #72a3d0;
+  }
+}
+
+.btnSearch {
+  background-color: #fff;
+  color: #387de5;
+  border: 1px solid #387de5;
+  padding: 12px 23px 12px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 6px;
+  height: 40px;
+  width: 99px;
+}
+
+.btnSearch:hover {
+  background-color: #eff5ff;
+}
+
+h6 {
+  font-weight: normal;
+}
+
+h6 span {
+  font-weight: bold;
+  padding-right: 2em;
+}
+
+.secondary {
+  font-size: 12px;
+  color: $secondary;
+  border-radius: 4px;
+  background: #eee;
+  margin-right: 10px;
+  padding: 5px 8px;
+  vertical-align: super;
+}
+
+.createScriptModal {
+  border: none !important;
+}
